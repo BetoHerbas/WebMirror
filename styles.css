@@ -4,6 +4,8 @@
     border: 0;
 }
 
+/* CSS primer contenedor */
+
 .container1 {
     background-image: url('img/vlogger-img-05.jpg');
     background-size: cover;
@@ -104,4 +106,50 @@ nav li {
     margin-left: auto;
     margin-top: -25rem;
     
+}
+
+/* CSS segundo contenedor */
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+    background-color: #fd7b7b;
+}
+
+#container2Title{
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+}
+
+#superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: blueviolet;
+}
+
+#superior h3{
+    margin-top: 5%;
+    color: white;
+}
+
+#inferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+    width: 60vw;
+    margin-left: 20vw;
+    background-color: seagreen;
+}
+
+#inferior h3{
+    margin-top: 7%;
+    color: white;
 }
