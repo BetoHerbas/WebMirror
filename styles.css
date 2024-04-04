@@ -4,7 +4,7 @@
     border: 0;
 }
 
-/* CSS primer contenedor */
+/* Primer contenedor */
 
 .container1 {
     background-image: url('img/vlogger-img-05.jpg');
@@ -108,7 +108,7 @@ nav li {
     
 }
 
-/* CSS segundo contenedor */
+/* Segundo contenedor */
 
 .container2{
     display: flex;
@@ -154,4 +154,48 @@ nav li {
 #inferior h3{
     margin-top: 7%;
     font-size: 3rem;
+}
+
+/* Tercer contenedor */
+
+.container3{
+    display: flex;
+    height: 140vh;
+    width: 100vw;
+    background-color: yellow;
+}
+
+#container3Img{
+    justify-content: center;
+    background-color: red;
+    height: 140vh;
+    width: 50rem;
+}
+
+#container3Title{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    height: 30vh;
+    width: 50rem;
+}
+
+#container3info{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    height: 70vh;
+    width: 50rem;
+}
+
+#socialMediaData{
+    background-color: aqua;
+    width: 50rem;
+    height: 20vh;
+}
+
+#achivements{
+    background-color: cadetblue;
+    width: 50rem;
+    height: 20vh;
 }
