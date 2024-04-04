@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container1 {
+    background-image: url('img/vlogger-img-05.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    margin-left: auto;
+}
+
+nav {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 1vh;
+    height: 6vh;
+    list-style: none;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+nav li {
+    margin-top: 4%;
+    margin-left: 35px;
+}
+
+.container1 section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+#textInfo {
+    display: flex;
+}
+
+#titleName {
+    color: white;
+    font-size: 7rem;
+    margin-left: 5vw;
+    margin-top: 25vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#jobInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin-left: auto;
+    color: white;
+    z-index: 1;
+}
+
+#jobInfo hr {
+    border: none;
+    border-top: 2px solid white; /* Cambia el color y el grosor de la línea */
+    width: 10rem;
+    border-radius: 5px; /* Añade una curvatura a los bordes */
+    margin-left: 20rem;
+    margin-top: 20rem;
+}
+
+#jobInfo h2 {
+    font-size: 2rem;
+    margin-left: 20.5rem;
+    margin-top: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#jobInfo p {
+    font-size: 1rem;
+    margin-left: 20.5rem;
+    margin-top: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#containerImg1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#img1 {
+    bottom: 0;
+    margin-left: auto;
+    margin-top: -25rem;
+    
+}
