@@ -199,3 +199,42 @@ nav li {
     width: 50rem;
     height: 20vh;
 }
+
+/* Cuarto contenedor */
+
+ .container4{
+    height: 170vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+ }
+
+ #container4Title{
+    height: 10rem;
+    width: 100vw;
+    background-color: peru;
+ }
+
+ #mainVideo{
+    height: 35rem;
+    width: 90vw;
+    background-color: darkorange;
+    margin-left: 5vw;
+ }
+
+ #secondaryVideos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50vh;
+    width: 90vw;
+    background-color: red;
+    margin-left: 5vw;
+ }
+
+.video{
+    height: 15rem;
+    width: 20rem;
+    background-color: yellow;
+}
