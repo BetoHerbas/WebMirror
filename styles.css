@@ -446,12 +446,10 @@ nav li {
 
 .container5 {
     height: 120vh;
-    /* Ajustar la altura automáticamente según el contenido */
     width: 100vw;
     display: flex;
     flex-direction: row;
     position: relative;
-    /* Establecer como un elemento de posición relativa */
 }
 
 #container5Img1 {
@@ -525,11 +523,44 @@ nav li {
     position: absolute; 
     top: 0; 
     right: 0; 
-    width: auto; /* Ajusta el ancho automáticamente según el tamaño de la imagen */
-    height: auto; /* Ajusta la altura automáticamente según el tamaño de la imagen */
+    width: auto; 
+    height: auto; 
     overflow: visible;
-    margin: 0; /* Elimina cualquier margen */
+    margin: 0; 
     margin-top: -5%;
-    padding: 0; /* Elimina cualquier relleno */
+    padding: 0;
     z-index: 1; 
+}
+
+/* Sexto contenedor */
+
+.container6 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.getInTouch {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.sendContact {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    background-color: rosybrown;
+}
+
+.sendContact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    height: 100vh;
 }
