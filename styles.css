@@ -455,14 +455,14 @@ nav li {
 }
 
 #container5Img1 {
-    width: 460px;
+    width: 30vw;
     position: relative;
     height: 120vh;
     overflow: visible;
 }
 
 #container5Img1 img {
-    width: 100%;
+    width: 95%;
     height: 110%;
     position: absolute;
     bottom: 0;
@@ -480,7 +480,7 @@ nav li {
 }
 
 #container5Title h2 {
-    font-size: 12em; 
+    font-size: 1000%; 
     font-family: 'Roboto', sans-serif;
 }
 
