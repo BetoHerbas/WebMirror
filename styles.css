@@ -326,7 +326,7 @@ nav li {
 /* Cuarto contenedor */
 
 .container4 {
-    height: auto;
+    height: 180vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -334,12 +334,27 @@ nav li {
 }
 
 #container4Title {
-    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20em;
     width: 100vw;
-    background-color: peru;
+}
+
+#container4Title h2 {
+    font-size: 12vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    top: 20%;
+    margin-bottom: -3%;
+    z-index: 3;
 }
 
 #mainVideo {
+    background-image: url('img/vlogger-img-01.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     height: 35vw;
     width: 90vw;
     background-color: darkorange;
@@ -349,17 +364,67 @@ nav li {
 #secondaryVideos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: auto;
+    justify-content: space-between;
+    height: 25vh;
     width: 90vw;
-    background-color: red;
     margin-left: 5vw;
+    margin-top: 4rem;
 }
 
-.video {
-    height: 15vw;
-    width: 20vw;
-    background-color: yellow;
+#video1, #video2, #video3 {
+    height: 14vw;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+#video1{
+    background-image: url(img/vlogger-template-featured-video-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#video2{
+    background-image: url(img/vlogger-template-featured-video-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#video3{
+    background-image: url(img/vlogger-template-featured-video-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+#secondaryVideos p{
+    font-size: 3em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#visitChannel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 2rem;
+}
+
+#visitChannel a{
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-decoration-thickness: 4px;
+    color: white;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Quinto contenedor */
