@@ -21,13 +21,15 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin-left: 60%; /* Ajusta el margen izquierdo según sea necesario */
+    margin-left: 60%;
+    /* Ajusta el margen izquierdo según sea necesario */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 10%; /* Ajusta el margen derecho según sea necesario */
+    margin-right: 10%;
+    /* Ajusta el margen derecho según sea necesario */
     margin-top: 1vh;
     height: 6vh;
     width: 40vw;
@@ -43,7 +45,8 @@ nav a {
 nav li {
     display: flex;
     margin-top: 4%;
-    margin-left: 2%; /* Ajusta el margen izquierdo según sea necesario */
+    margin-left: 2%;
+    /* Ajusta el margen izquierdo según sea necesario */
 }
 
 .container1 section {
@@ -77,9 +80,11 @@ nav li {
 
 #jobInfo hr {
     border: none;
-    border-top: 2px solid white; /* Cambia el color y el grosor de la línea */
+    border-top: 2px solid white;
+    /* Cambia el color y el grosor de la línea */
     width: 10vw;
-    border-radius: 5px; /* Añade una curvatura a los bordes */
+    border-radius: 5px;
+    /* Añade una curvatura a los bordes */
     margin-left: 20vw;
     margin-top: 20rem;
 }
@@ -173,14 +178,19 @@ nav li {
 }
 
 .container3 img {
-    position: absolute; /* Establece el posicionamiento absoluto para que la imagen se superponga */
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: 80%; /* La imagen ocupará el 100% del alto del contenedor */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-    z-index: 2; /* Asegura que la imagen esté por encima de otros elementos */
+    position: absolute;
+    /* Establece el posicionamiento absoluto para que la imagen se superponga */
+    width: 100%;
+    /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 80%;
+    /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    z-index: 2;
+    /* Asegura que la imagen esté por encima de otros elementos */
 }
 
-#imgBack{
+#imgBack {
     top: 20%;
 }
 
@@ -220,9 +230,11 @@ nav li {
 
 #personalInfo hr {
     border: none;
-    border-top: 2px solid black; /* Cambia el color y el grosor de la línea */
+    border-top: 2px solid black;
+    /* Cambia el color y el grosor de la línea */
     width: 10vw;
-    border-radius: 5px; /* Añade una curvatura a los bordes */
+    border-radius: 5px;
+    /* Añade una curvatura a los bordes */
 }
 
 #personalInfo p {
@@ -281,7 +293,8 @@ nav li {
 
 #socialMediaData hr {
     border: none;
-    border-top: 4px solid rgb(88, 84, 84); /* Cambia el color y el grosor de la línea */
+    border-top: 4px solid rgb(88, 84, 84);
+    /* Cambia el color y el grosor de la línea */
     width: 60vw;
 }
 
@@ -371,44 +384,46 @@ nav li {
     margin-top: 4rem;
 }
 
-#video1, #video2, #video3 {
+#video1,
+#video2,
+#video3 {
     height: 14vw;
     width: 25vw;
     border-radius: 10px;
 }
 
-#video1{
+#video1 {
     background-image: url(img/vlogger-template-featured-video-3.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#video2{
+#video2 {
     background-image: url(img/vlogger-template-featured-video-2.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#video3{
+#video3 {
     background-image: url(img/vlogger-template-featured-video-4.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .video img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
-#secondaryVideos p{
+#secondaryVideos p {
     font-size: 3em;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-#visitChannel{
+#visitChannel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,7 +433,7 @@ nav li {
     margin-top: 2rem;
 }
 
-#visitChannel a{
+#visitChannel a {
     text-decoration: underline;
     text-decoration-color: gray;
     text-decoration-thickness: 4px;
@@ -430,51 +445,91 @@ nav li {
 /* Quinto contenedor */
 
 .container5 {
-    height: auto;
+    height: 120vh;
+    /* Ajustar la altura automáticamente según el contenido */
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: lightblue;
-    margin-top: 2rem;
+    position: relative;
+    /* Establecer como un elemento de posición relativa */
 }
 
-#container5Img1,
-#container5Img2 {
-    width: 20%;
-    height: 100%;
-    background-color: blue;
+#container5Img1 {
+    width: 460px;
+    position: relative;
+    height: 120vh;
+    overflow: visible;
+}
+
+#container5Img1 img {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 #container5Title {
-    width: 60%;
-    height: auto;
-    background-color: green;
-}
-
-#container5Content {
+    display: flex;
+    justify-content: center;
     width: 20%;
-    height: 100%;
-    background-color: pink;
+    height: auto;
+    margin-left: 5%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
 #container5Title h2 {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 12em; 
     font-family: 'Roboto', sans-serif;
 }
 
+
+#container5Content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    width: 27%;
+    height: auto;
+}
+
 .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-top: 2rem;
-    margin-left: 2rem;
+}
+
+.items hr {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 7%;
 }
 
 .items h2 {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
+    color: rgb(109, 106, 106);
 }
 
 .items p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
+}
+
+#container5Img2 {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: auto; /* Ajusta el ancho automáticamente según el tamaño de la imagen */
+    height: auto; /* Ajusta la altura automáticamente según el tamaño de la imagen */
+    overflow: visible;
+    margin: 0; /* Elimina cualquier margen */
+    margin-top: -5%;
+    padding: 0; /* Elimina cualquier relleno */
+    z-index: 1; 
 }
