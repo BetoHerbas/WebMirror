@@ -21,16 +21,14 @@
 
 header {
     display: flex;
-    justify-content: space-between;
-    margin-left: 60%;
-    /* Ajusta el margen izquierdo según sea necesario */
+    width: 50vw;
+    margin-left: auto;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    margin-right: 10%;
-    /* Ajusta el margen derecho según sea necesario */
+    margin-right:auto;
     margin-top: 1vh;
     height: 6vh;
     width: 40vw;
@@ -38,9 +36,32 @@ nav {
 }
 
 nav a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hablame {
+    margin-top: -0.5vh;
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+
+
+#hablame:hover {
+    background-color: white; /* Color de fondo al pasar el mouse */
+    color : black; /* Color de texto al pasar el mouse */
 }
 
 nav li {
@@ -64,8 +85,8 @@ nav li {
 
 #titleName {
     color: white;
-    font-size: 7vw;
-    margin-left: 5vw;
+    font-size: 8vw;
+    margin-left: 5vw;   
     margin-top: 20vh;
     font-family: 'Roboto', sans-serif;
 }
@@ -73,7 +94,7 @@ nav li {
 #jobInfo {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 40vw;
     margin-left: auto;
     color: white;
     z-index: 1;
@@ -82,10 +103,8 @@ nav li {
 #jobInfo hr {
     border: none;
     border-top: 2px solid white;
-    /* Cambia el color y el grosor de la línea */
     width: 10vw;
     border-radius: 5px;
-    /* Añade una curvatura a los bordes */
     margin-left: 20vw;
     margin-top: 20rem;
 }
@@ -106,15 +125,15 @@ nav li {
 
 #containerImg1 {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    margin-top: auto;
 }
 
 #img1 {
     bottom: 0;
     margin-left: 7vw;
-    margin-top: -16vw;
-    height: 38rem;
+    margin-top: -20vw;
+    
 }
 
 /* Segundo contenedor */
@@ -455,6 +474,8 @@ nav li {
     display: flex;
     flex-direction: row;
     position: relative;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 2px solid black; 
 }
 
 #container5Img1 {
@@ -544,16 +565,18 @@ nav li {
     width: 100vw;
     display: flex;
     flex-direction: row;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 2px solid black; 
 }
 
 .getInTouch {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10.5vw;
     width: 50vw;
     height: 100vh;
+    border-right: 2px solid black; 
 }
 
 .sendContact {
@@ -563,7 +586,7 @@ nav li {
     height: 100vh;
     padding-left: 10vw;
     padding-right: 10vw;
-    background-color: rosybrown;
+    
 }
 
 .sendContact h2{
