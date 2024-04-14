@@ -6,9 +6,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Primer contenedor */
 
-.container1 {
+#container1 {
     background-image: url('img/vlogger-img-05.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -28,7 +33,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-right:auto;
+    margin-right: auto;
     margin-top: 1vh;
     height: 6vh;
     width: 40vw;
@@ -45,9 +50,11 @@ nav a {
 
 #hablame {
     margin-top: -0.5vh;
-    display: flex; 
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
@@ -60,8 +67,10 @@ nav a {
 
 
 #hablame:hover {
-    background-color: white; /* Color de fondo al pasar el mouse */
-    color : black; /* Color de texto al pasar el mouse */
+    background-color: white;
+    /* Color de fondo al pasar el mouse */
+    color: black;
+    /* Color de texto al pasar el mouse */
 }
 
 nav li {
@@ -71,7 +80,7 @@ nav li {
     /* Ajusta el margen izquierdo según sea necesario */
 }
 
-.container1 section {
+#container1 article {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -85,8 +94,8 @@ nav li {
 
 #titleName {
     color: white;
-    font-size: 8vw;
-    margin-left: 5vw;   
+    font-size: 10rem;
+    margin-left: 5vw;
     margin-top: 20vh;
     font-family: 'Roboto', sans-serif;
 }
@@ -119,7 +128,7 @@ nav li {
 #jobInfo p {
     font-size: 1rem;
     margin-left: 20.5vw;
-    margin-top: 12px;
+    margin-top: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -133,7 +142,7 @@ nav li {
     bottom: 0;
     margin-left: 7vw;
     margin-top: -20vw;
-    
+
 }
 
 /* Segundo contenedor */
@@ -204,13 +213,10 @@ nav li {
     position: absolute;
     /* Establece el posicionamiento absoluto para que la imagen se superponga */
     width: 100%;
-    /* La imagen ocupará el 100% del ancho del contenedor */
     height: 80%;
-    /* La imagen ocupará el 100% del alto del contenedor */
     object-fit: cover;
     /* Ajusta la imagen para cubrir el contenedor */
     z-index: 2;
-    /* Asegura que la imagen esté por encima de otros elementos */
 }
 
 #imgBack {
@@ -246,9 +252,14 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50vw;
+    align-items: baseline;
+    width: 40vw;
     height: 30rem;
     z-index: 3;
+}
+
+#personalInfoTop {
+    font-weight: bold;
 }
 
 #personalInfo hr {
@@ -257,7 +268,6 @@ nav li {
     /* Cambia el color y el grosor de la línea */
     width: 10vw;
     border-radius: 5px;
-    /* Añade una curvatura a los bordes */
 }
 
 #personalInfo p {
@@ -268,8 +278,7 @@ nav li {
 #socialMedia {
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
-
+    align-items: baseline;
 }
 
 #socialMedia p {
@@ -285,6 +294,7 @@ nav li {
     font-size: 2.5em;
     margin-top: 2rem;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 #socialMediaData {
@@ -394,8 +404,27 @@ nav li {
     border-radius: 10px;
     height: 35vw;
     width: 90vw;
-    background-color: darkorange;
     margin-left: 5vw;
+    transition-duration: 0.5s;
+}
+
+#mainVideo:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(145, 145, 145, 0.9);
+    filter: brightness(80%);
+}
+
+#video {
+    position: relative;
+}
+
+#video p {
+    margin-top: 32%;
+    margin-left: 2%;
+    padding: 10px;
+    color: white;
+    font-size: 3vw;
+
 }
 
 #secondaryVideos {
@@ -414,7 +443,17 @@ nav li {
     height: 14vw;
     width: 25vw;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
+
+#video1:hover,
+#video2:hover,
+#video3:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+    text-shadow: 2px 2px 4px rgba(145, 145, 145, 0.9);
+}
+
 
 #video1 {
     background-image: url(img/vlogger-template-featured-video-3.jpg);
@@ -442,9 +481,13 @@ nav li {
 }
 
 #secondaryVideos p {
-    font-size: 3em;
+    position: static;
+    margin-top: 20%;
+    margin-left: 45%;
+    font-size: 3vw;
     color: white;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(182, 179, 179, 0.9);
 }
 
 #visitChannel {
@@ -464,6 +507,11 @@ nav li {
     color: white;
     font-size: 4em;
     font-family: 'Roboto', sans-serif;
+    transition-duration: 0.5s;
+}
+
+#visitChannel a:hover {
+    text-decoration-color: white;
 }
 
 /* Quinto contenedor */
@@ -475,7 +523,7 @@ nav li {
     flex-direction: row;
     position: relative;
     background-color: rgb(245, 245, 245);
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
 }
 
 #container5Img1 {
@@ -504,7 +552,7 @@ nav li {
 }
 
 #container5Title h2 {
-    font-size: 1000%; 
+    font-size: 1000%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -546,16 +594,16 @@ nav li {
 }
 
 #container5Img2 {
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    width: auto; 
-    height: auto; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
     overflow: visible;
-    margin: 0; 
+    margin: 0;
     margin-top: -5%;
     padding: 0;
-    z-index: 1; 
+    z-index: 1;
 }
 
 /* Sexto contenedor */
@@ -566,7 +614,7 @@ nav li {
     display: flex;
     flex-direction: row;
     background-color: rgb(245, 245, 245);
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
 }
 
 .getInTouch {
@@ -576,7 +624,53 @@ nav li {
     padding-left: 10.5vw;
     width: 50vw;
     height: 100vh;
-    border-right: 2px solid black; 
+    border-right: 2px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.getInTouch p {
+    margin-top: 0;
+    font-size: 4vw;
+    color: rgb(109, 106, 106);
+}
+
+.getInTouch hr {
+    border: none;
+    border-top: 4px solid rgb(109, 106, 106);
+    width: 7vw;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.getInTouch h2 {
+    font-size: 0.7vw;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(109, 106, 106);
+    font-weight: bold;
+}
+
+.getInTouch address {
+    font-size: 1.5vw;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(77, 75, 75);
+    font-style: normal;
+}
+
+#tel {
+    margin-top: 2rem;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(77, 75, 75);
+    text-decoration: none;
+}
+
+#mail {
+    margin-top: 5rem;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(77, 75, 75);
 }
 
 .sendContact {
@@ -584,12 +678,11 @@ nav li {
     flex-direction: column;
     width: 50vw;
     height: 100vh;
-    padding-left: 10vw;
+    padding-left: 13vw;
     padding-right: 10vw;
-    
 }
 
-.sendContact h2{
+.sendContact h2 {
     font-size: 100%;
     margin-top: 15vh;
 }
@@ -600,19 +693,59 @@ nav li {
     justify-content: center;
 }
 
-.sendContact input, textarea {
-    border-style: solid;
+.sendContact input {
     border-width: 1px;
     height: 45%;
     margin-top: 5vh;
-    border-radius: 1px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.sendContact button{
+.sendContact textarea {
+    border-width: 1px;
+    height: 90%;
+    /* Ajusta la altura según tu preferencia */
     margin-top: 5vh;
-    width: 40%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sendContact textarea::placeholder {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.sendContact input::placeholder {
+    padding-left: 5px;
+}
+
+.sendContact button {
+    margin-top: 5vh;
+    width: 30%;
     height: 45%;
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.sendContact button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 90vw;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+}
+
+.socialMedia a {
+    margin-right: 40px;
 }

@@ -10,18 +10,18 @@
 
 <body>
     <!-- Primer contenedor -->
-    <div class="container1">
+    <section id="container1">
         <header>
             <nav>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">A cerca</a></li>
-                <li><a href="#">Vlog</a></li>
-                <li><a href="#">Equipo</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a id="hablame" href="#">Háblame</a></li>
+                <li><a href="#container1">Inicio</a></li>
+                <li><a href="#container3">A cerca</a></li>
+                <li><a href="#container4">Vlog</a></li>
+                <li><a href="#container5">Equipo</a></li>
+                <li><a href="#container6">Contacto</a></li>
+                <li><a id="hablame" href="#container6">Háblame</a></li>
             </nav>
         </header>
-        <section>
+        <article>
             <div id="textInfo">
                 <div id="titleName">
                     <h1>Jakob <br> Smith</h1>
@@ -37,8 +37,8 @@
             <div id="containerImg1">
                 <img id="img1" src="/img/vlogger-template-hero-img.png" alt="">
             </div>
-        </section>
-    </div>
+        </article>
+    </section>
 
     <!-- Segundo contenedor -->
 
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="container3">
+    <div class="container3" id="container3">
 
         <img id="imgBack" src="img/vlogger-template-intro-img.png" alt="Img cambiar">
 
@@ -71,11 +71,13 @@
             <div id="container3info">
                 <div id="personalInfo">
                     <hr>
-                    <p>Eu, cras elit ut volutpat, nisl dolor nullam arcu viverra pharetra volutpat elementum mattis
+                    <p id="personalInfoTop">Eu, cras elit ut volutpat, nisl dolor nullam arcu viverra pharetra volutpat
+                        elementum mattis
                         nulla vel id erat turpis leo tortor nulla cras lectus dignissim viverra lorem.</p>
                     <p>Ac eu ipsum venenatis, id tincidunt sed rhoncus laoreet integer gravida elementum purus vel
                         adipiscing urna amet velit placerat eget tincidunt quam placerat sed pellentesque volutpat
-                        interdum tincidunt ut nisi.</p>
+                        interdum tincidunt ut nisi, habitasse ligula porta enim consectetur at elementum, tincidunt eu
+                        augue habitasse a enim, sed quam semper lobortis praesent.</p>
                 </div>
                 <div id="socialMedia">
                     <p>SIGUE MIS AVENTURAS</p>
@@ -130,22 +132,24 @@
         </section>
     </div>
 
-    <div class="container4">
+    <div class="container4" id="container4">
         <div id="container4Title">
             <h2>Vlog Destacado</h2>
         </div>
         <div id="mainVideo">
-
+            <div id="video">
+                <p>▷ Viverra turpis pretium</p>
+            </div>
         </div>
         <div id="secondaryVideos">
             <div id="video1">
                 <p>▷</p>
             </div>
             <div id="video2">
-                <p>Titulo del video</p>
+                <p>▷</p>
             </div>
             <div id="video3">
-                <p>Titulo del video</p>
+                <p>▷</p>
             </div>
         </div>
         <div id="visitChannel">
@@ -153,7 +157,7 @@
         </div>
     </div>
 
-    <div class="container5">
+    <div class="container5" id="container5">
         <div id="container5Img1">
             <img src="img/vlogger-template-footer-img-1.png" alt="">
         </div>
@@ -190,13 +194,16 @@
         </div>
     </div>
 
-    <div class="container6">
+    <div class="container6" id="container6">
         <div class="getInTouch">
-            <p>Me encataría colaborar y crear contenido increible. Háblame</p>
+            <p>Me encataría colaborar y crear contenido increible. ¡Háblame ahora!</p>
             <hr>
             <h2>PONTE EN CONTACTO</h2>
-            <p>123 Fifth Ave, New York, NY 12004.</p>
-            <p>+1 123 456 78 90</p>
+            <address>
+                123 Fifth Ave, New York, NY 12004.
+            </address>
+            <a id="tel" href="tel:+11234567890">+1 123 456 78 90</a>
+            <a id="mail" href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>
         </div>
         <div class="sendContact">
             <h2>ENVIAME UN MENSAJE</h2>
@@ -212,10 +219,10 @@
 
     <footer>
         <div class="socialMedia">
-            <a href="">Youtube</a>
-            <a href="">Instagram</a>
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
+            <a href=""><img src="/img/youtube black.svg" alt="Youtube"></a>
+            <a href=""><img src="/img/instagram.svg" alt="Instagram"></a>
+            <a href=""><img src="/img/twitter.svg" alt="Twitter"></a>
+            <a href=""><img src="/img/facebook.svg" alt="Facebook"></a>
         </div>
     </footer>
 
