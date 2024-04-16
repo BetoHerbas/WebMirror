@@ -755,6 +755,7 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+
     #container1 nav {
         display: none;
     }
@@ -1029,7 +1030,7 @@ footer {
 
     #container5Img1 {
         width: 35vw;
-        height: 47vh;
+        height: 90vw;
         margin-top: auto;
         margin-left: 50vw;
     }
@@ -1065,7 +1066,7 @@ footer {
     }
 
     #container5Title h2 {
-        font-size: 5em;
+        font-size: 18vw;
     }
 
     /* container 6 */
