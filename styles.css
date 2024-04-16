@@ -769,7 +769,7 @@ footer {
     }
 
     #btnMenu button {
-        font-size: 2.2rem;
+        font-size: 8vw;
         padding-left: 6%;
         padding-right: 6%;
     }
@@ -784,6 +784,10 @@ footer {
         width: 90%;
         margin-left: 0;
         justify-content: space-around;
+    }
+
+    #jobInfo h2{
+        font-size: 7vw;
     }
 
     #jobInfo hr,
@@ -801,7 +805,7 @@ footer {
     }
 
     #titleName {
-        font-size: 5rem;
+        font-size: 17vw;
         margin-top: 6vh;
         margin-left: 0;
     }
@@ -815,21 +819,25 @@ footer {
     /* container 2 */
 
     .container2 {
-        height: 20vh;
+        height: 40vw;
+    }
+
+    #container2Title h2{
+        font-size: 3vw;
     }
 
     #superior h3 {
-        font-size: 1.2em;
+        font-size: 4vw;
     }
 
     #inferior h3 {
-        font-size: 1em;
+        font-size: 4vw;
     }
 
     /* tercer contenedor */
 
     .container3 {
-        height: 160vh;
+        height: 170vh;
     }
 
     #imgBack {
@@ -845,13 +853,14 @@ footer {
 
     #container3Title {
         margin-left: 4vw;
-        height: 25vh;
-        width: 100vw;
+        height: 45vw;
+        width: 90vw;
+        font-size: 20vw;
     }
 
     #container3Title h2 {
         font-size: 20vw;
-        margin-top: 2rem;
+        margin-top: auto;
     }
 
     #container3info {
@@ -864,22 +873,32 @@ footer {
     }
 
     #personalInfo {
-        height: 30rem;
+        height: 150vw;
         width: 94vw;
-        margin: 4vw;
+        margin: 2vw;
+    }
+
+    #personalInfo hr {
+        width: 30vw;
+        margin-top: 0;
     }
 
     #personalInfo p {
         margin: 5%;
-        font-size: 1.2rem;
+        width: 90vw;
+        font-size: 5vw;
+        text-align: justify;
     }
 
     #socialMedia {
         margin-left: 9%;
+        margin-top: 10vw;
+        height: 80vw;
     }
 
     #socialMedia p {
-        margin-top: 2rem;
+        font-size: 4vw;
+        margin-top: auto;
         margin-left: 0rem;
     }
 
@@ -892,28 +911,43 @@ footer {
     #socialMediaData {
         height: 20vh;
         width: 100vw;
+        margin-top: 80vw;
     }
 
     #socialMediaData hr {
         width: 90vw;
+        margin-top: 0;
         margin-left: 5vw;
     }
 
+    .data h2 {
+        font-size: 6vw;
+    }
+
+    .data p{
+        font-size: 3vw;
+    }
+
     .dataContainers {
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
         flex: 1;
         justify-content: space-around;
     }
 
+    #data1{
+        width: 90vw;
+        height: 50%;
+    }
+
     #data2 {
         width: 50vw;
-
+        height: 50%;
     }
 
     #data3 {
         width: 50vw;
-        margin-left: 50vw;
-        margin-top: -21vw;
+        height: 50%;
     }
 
     #awards {
